@@ -1,0 +1,65 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Fonte para código */
+    background-color: #282c34; /* Fundo escuro */
+    color: #abb2bf; /* Texto claro */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #3e4451; /* Fundo do container */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #61afef; /* Título azul */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+#fileContent {
+    background-color: #21252b; /* Fundo do bloco de código */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    white-space: pre-wrap; /* Quebra de linha */
+    word-break: break-all; /* Quebra de palavras longas */
+    margin-bottom: 20px;
+    max-height: 400px; /* Altura máxima */
+    overflow-y: auto; /* Scroll se o conteúdo for muito longo */
+    border: 1px solid #5c6370;
+    font-size: 0.9em;
+}
+
+button {
+    background-color: #98c379; /* Botão verde */
+    color: #21252b;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7bbd56;
+}
+
+#message {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #e5c07b; /* Mensagem amarela */
+    font-size: 1.1em;
+}

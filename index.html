@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Configuração (Exemplo)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conteúdo do Arquivo de Configuração (Exemplo)</h1>
+        <pre id="fileContent">
+            version: '3.8'
+            services:
+              web:
+                image: nginx:latest
+                ports:
+                  - "80:80"
+              database:
+                image: postgres:13
+                environment:
+                  POSTGRES_DB: mydb
+                  POSTGRES_USER: user
+                  POSTGRES_PASSWORD: password123
+        </pre>
+        <button id="simulateActionButton">Simular Ação</button>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
